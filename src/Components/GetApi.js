@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Form, Card, Container, Col, Row } from 'react-bootstrap';
+import { Button,  Card, Container, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './component.css';
 
@@ -12,7 +12,7 @@ function GetApi() {
     const [avatar, setAvatar] = useState('');
     const [visitProfile, setVisitProfile] = useState('');
     const [userInput, setUserInput] = useState('');
-    // const [error, setError] = useState(null);
+  
 
 
 
@@ -49,16 +49,16 @@ function GetApi() {
 
     return(
         <div>
+            <header>Search Github User's</header>
             <Container className='mt-5'>
             <Row>
                 <Col>
                     <div className='search'>
-                        <Form onSubmit={handleSubmit} > 
-                            <Form.Group className="mb-3"  >
-                                <Form.Control className='search-field' type="text" placeholder="Just enter Username and wait"  onChange={handleSearch}/>
-                                <Button variant="primary" type='submit' className='visit-btn'>Search</Button>
-                            </Form.Group>  
-                        </Form>
+                        <form onSubmit={handleSubmit} > 
+                                <input type='text' className='search-field'  placeholder="Enter Github Username"  onChange={handleSearch} />
+                                <Button variant="primary" type='submit' className='search-btn btn'>Search</Button>
+                           
+                        </form>
                     </div>
                 </Col>
                 
@@ -71,7 +71,7 @@ function GetApi() {
                             <Card.Img variant="top" src={avatar} />
                             <Card.Body>
                                 <Card.Title>UserName:  {name}</Card.Title>
-                                <Button variant="primary" href={visitProfile} target='_blank' className='visit-btn'>Go on Profile</Button>
+                                <Button variant="primary" href={visitProfile} target='_blank' className='visit-btn btn'>Go on Profile</Button>
                             </Card.Body>
                         </Card>
                 </div>}
