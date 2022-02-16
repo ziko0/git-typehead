@@ -28,6 +28,7 @@ header{
     border-radius: 5px;
     margin-right: 1.5rem;
     border-bottom: 1px solid #45A29e;
+    font-weight: 100;
 }
 .search-field:focus{
     background-color: #45A29e;
