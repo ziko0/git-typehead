@@ -55,7 +55,7 @@ function GetApi() {
                 <Col>
                     <div className='search'>
                         <form onSubmit={handleSubmit} > 
-                                <input type='text' className='search-field'  placeholder="Enter Github Username"  onChange={handleSearch} />
+                                <input type='text' className='search-field'  placeholder="Github: Username"  onChange={handleSearch} />
                                 <Button variant="primary" type='submit' className='search-btn btn'>Search</Button>
                            
                         </form>
