@@ -23,11 +23,14 @@ function GetApi() {
         setVisitProfile(html_url);
     };
 
-    
+//     handleSearch to get typed info from input
+ 
     const handleSearch = (e) => {
         setUserInput(e.target.value);
     }
 
+//     handleSbumit to fetch data after submitting form 
+    
     const handleSubmit = (e) => {
         e.preventDefault()
             fetch(`https://api.github.com/users/${userInput}`)
