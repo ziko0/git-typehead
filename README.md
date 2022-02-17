@@ -1,3 +1,10 @@
+#About project
+
+This is a React app wich fetch's data from github api when user submits form.
+In this project I used github users api,  bootstrap Grid and bootstrap Buttons.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
